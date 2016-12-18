@@ -1,0 +1,24 @@
+#champsOrga{
+	display:none;
+}
+
+#champsArt{
+	display:none;
+}
+
+
+html{
+	height: 100%;
+}
+.container{
+	height: 100%;
+}
+
+
+footer {
+
+  background-color: #555;
+  color: white;
+  padding: 10px;
+}
+
