@@ -54,15 +54,20 @@ if (!empty($_POST)){
 		
 		//=====Déclaration des messages au format texte et au format HTML.
 		// $message_txt = "Origine demande : Users".$passage_ligne." Type de demande : ".$dmd."\n Descriptif : ".$msg."".$passage_ligne;
-		$message_html = "<html>
-						<head>
-						</head>
-						<body>
-							<b>Origine demande</b> : Users <br>
-							<b>Type de probleme</b>: ".$dmd."<br>
-							<b>Descriptif</b> :<br>
-							<p> ".$msg."</p>
-						</body>
+		$message_html ="<!DOCTYPE html>
+							<html lang='fr'>
+							  <head>
+								<meta charset='utf-8'>
+							  </head>
+							  <body>
+								<h2>Signalment d'un incident</h2>
+								<p>Réception de l'incident avec les éléments suivants :</p>
+								<ul>
+								  <li><strong>Origine demande</strong> : User </li>
+								  <li><strong>Type de probleme</strong> : $dmd </li>
+								  <li><strong>Descriptif</strong> : $msg </li>
+								</ul>
+							  </body>
 						</html>";
 		
 		//=====Création du message(corp).
